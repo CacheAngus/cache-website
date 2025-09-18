@@ -15,7 +15,7 @@ export const routes: Routes = [
     loadChildren: () => import('./pages/projects/projects.routes').then((m) => m.PROJECTS_ROUTES),
   },
   {
-    path: 'about',
+    path: 'experience',
     loadChildren: () =>
       import('./pages/experience/experience.routes').then((m) => m.EXPERIENCE_ROUTES),
   },
