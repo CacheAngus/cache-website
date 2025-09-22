@@ -1,1 +1,18 @@
-<p>welcome works!</p>
+<div class="grid grid-cols-10 grid-rows-7 mx-2">
+  <div class="col-start-2 col-span-8 row-start-2 row-span-3">
+    <p class="text-3xl flex justify-center">My name is Cache</p>
+    <p class="row-start-3 flex justify-center">And I do web development</p>
+    <p class="row-start-4 flex justify-center">(The name is a coincidence)</p>
+    <div class="row-span-2 flex justify-center">
+      <img
+        [ngStyle]="{ height: '200px', width: '200px' }"
+        src="https://mikael.neocities.org/collections/disc-gifs/cd_008.gif"
+        alt=""
+      />
+    </div>
+    <a href="/experience" class="flex justify-center items-center space-x-2 text-lg pt-4">
+      <div>Feel free to explore</div>
+      <mat-icon>arrow_forward</mat-icon>
+    </a>
+  </div>
+</div>

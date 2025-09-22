@@ -77,9 +77,10 @@
   </nz-sider>
   <nz-layout>
     <nz-content>
-      <app-background-component [title]="title">
+      <app-background-component [ngStyle]="{ 'z-index': 'auto' }" [title]="'Welcome'" />
+      <div [ngStyle]="{ 'z-index': '2', 'margin-top': '-75%' }">
         <router-outlet></router-outlet>
-      </app-background-component>
+      </div>
     </nz-content>
   </nz-layout>
 </nz-layout>

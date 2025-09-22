@@ -11,7 +11,7 @@ import { BackgroundComponent } from './common/background/background.component';
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
-export class App {
+export class App implements OnInit {
   isCollapsed = false;
   routers = [
     { icon: '26798.ico', link: '/welcome', title: 'Welcome', isActive: false },

@@ -2,13 +2,19 @@
   class="bg-gray-300 shadow border-2 border-t-white border-l-white border-b-black border-r-black h-11/12"
 >
   <div class="mx-2 px-1 mt-1 h-10 w-auto bg-blue-800 flex justify-between items-center">
-    <div class="mt-2 text-white text-base">
-      <p>{{ title() }}</p>
+    <div class="text-white text-base">
+      <div>{{ title() }}</div>
     </div>
     <div
       class="h-6 w-6 bg-gray-300 border-2 border-t-white border-l-white border-b-black border-r-black pl-1.5"
     >
       x
     </div>
+  </div>
+  <div class="grid grid-cols-10 grid-rows-7 mx-2">
+    <p class="text-7xl row-start-1 col-start-1 col-span-3 pt-4">{{ title() }}</p>
+    <div
+      class="bg-amber-50 col-start-2 col-span-8 row-start-2 row-span-3 border-2 border-t-white border-l-white border-b-black border-r-black"
+    ></div>
   </div>
 </div>
