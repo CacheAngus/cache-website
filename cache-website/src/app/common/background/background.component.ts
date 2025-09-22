@@ -7,4 +7,5 @@ import { Component, input } from '@angular/core';
 })
 export class BackgroundComponent {
   title = input<string>('Welcome');
+  isPage = input<boolean>(false);
 }
