@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 import { NzIconModule } from 'ng-zorro-antd/icon';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { BackgroundComponent } from './common/background/background.component';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, RouterModule, NzIconModule, NzLayoutModule],
+  imports: [CommonModule, RouterModule, NzIconModule, NzLayoutModule, BackgroundComponent],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
@@ -18,4 +19,13 @@ export class App {
     { icon: '26799.ico', link: '/projects', title: 'Projects' },
     { icon: '29815.ico', link: '/about', title: 'About' },
   ];
+  title!: string;
+
+  ngOnInit(): void {
+    this.title = 'Welcome';
+  }
+
+  updateTitle(title: string) {
+    this.title = title;
+  }
 }
